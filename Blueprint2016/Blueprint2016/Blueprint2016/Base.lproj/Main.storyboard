@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Blueprint2016" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfc-nk-d19">
+                                <rect key="frame" x="279" y="232" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AZb-ta-y6u">
+                                <rect key="frame" x="252" y="285" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gt-rs-OZ5">
+                                <rect key="frame" x="259" y="348" width="83" height="30"/>
+                                <state key="normal" title="Start Game!"/>
+                                <connections>
+                                    <segue destination="mA1-cQ-tGt" kind="presentation" id="fYi-kv-CTF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hy8-3P-Gt5">
+                                <rect key="frame" x="357" y="284" width="36" height="30"/>
+                                <state key="normal" title="enter"/>
+                                <connections>
+                                    <action selector="inputedName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GHM-aP-R79"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AZb-ta-y6u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="30n-qv-gfe"/>
+                            <constraint firstItem="AZb-ta-y6u" firstAttribute="top" secondItem="Sfc-nk-d19" secondAttribute="bottom" constant="33" id="3Js-tT-ksu"/>
+                            <constraint firstItem="hy8-3P-Gt5" firstAttribute="leading" secondItem="AZb-ta-y6u" secondAttribute="trailing" constant="8" id="3Zd-eT-dzA"/>
+                            <constraint firstItem="5gt-rs-OZ5" firstAttribute="top" secondItem="AZb-ta-y6u" secondAttribute="bottom" constant="33" id="LXi-cj-mcQ"/>
+                            <constraint firstItem="Sfc-nk-d19" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ll3-7C-rxd"/>
+                            <constraint firstItem="AZb-ta-y6u" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fFE-pm-JWD"/>
+                            <constraint firstItem="Sfc-nk-d19" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fhC-a8-zqy"/>
+                            <constraint firstItem="5gt-rs-OZ5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gbe-pV-hSW"/>
+                            <constraint firstItem="hy8-3P-Gt5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kEI-pH-aKD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ll3-7C-rxd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="startGameButton" destination="5gt-rs-OZ5" id="bDM-WB-v6r"/>
+                        <outlet property="userNameTextField" destination="AZb-ta-y6u" id="D9h-58-iIq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="364"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="p8B-Q9-kSX">
+            <objects>
+                <viewController id="mA1-cQ-tGt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WGj-hB-DQB"/>
+                        <viewControllerLayoutGuide type="bottom" id="hwa-Kd-PUB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XBG-nG-CrO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="game will be displayed here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dDT-bh-ho2">
+                                <rect key="frame" x="200" y="285" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dDT-bh-ho2" firstAttribute="centerY" secondItem="XBG-nG-CrO" secondAttribute="centerY" id="jFv-xs-PQJ"/>
+                            <constraint firstItem="dDT-bh-ho2" firstAttribute="centerX" secondItem="XBG-nG-CrO" secondAttribute="centerX" id="oU7-Jj-dKo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXs-Rm-KGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="388"/>
+        </scene>
+    </scenes>
+</document>

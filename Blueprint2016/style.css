@@ -1,0 +1,40 @@
+body {
+	background-image: url("http://ultimatestorytellingblueprint.com/wp-content/uploads/2014/07/Blueprint-Background1.jpg");
+	font-family: Arial, Sans-serif, arial;
+	font-size: 24;
+	color: white;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	text-decoration-color: white;
+}
+
+#floatsy {
+	float: top;
+	margin-top: 70px;
+}
+
+#username {
+	width: 200px;
+	height: 50px;
+	border-radius: 7px;
+	border-width: 2px;
+	border-color: #500000;
+	font-size: 16;
+	font: 'Trebuchet';
+	align-left: auto;
+	align-right:auto;
+}
+
+#go {
+	width: 200px;
+	height: 50px;
+	border-radius: 7px;
+	border-width: 2px;
+	border-color: #500000;
+	align-left: auto;
+	align-right:auto;
+}
